@@ -26,14 +26,12 @@ Preencha aqui
 Descreva quais tipos de arquivos existem dentro da pasta `raw/`.
 
 ```md
-Exemplo:
-- PDFs digitais
-- PDFs escaneados
-- Arquivos TXT
-- Documentos DOCX
-- Arquivos Markdown
-- Imagens ou folhas digitalizadas
+Exemplo de como responder, com o formato e o que ele implica:
+- <extensao>: <nasce digital ou precisa de OCR?>, <o que da para extrair>
 ```
+
+> Abra a pasta e liste o que voce encontrou de fato. Esta quest avalia a sua
+> leitura do acervo, entao a resposta certa e a que corresponde aos arquivos.
 
 **Sua resposta:**
 
