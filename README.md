@@ -4,9 +4,9 @@
 
 Você acaba de encontrar uma pasta chamada `raw/`.
 
-Dentro dela estão documentos brutos de uma empresa fictícia: atas de reunião em PDF, folhas escaneadas em imagem e exportações de dados em planilha.
+Dentro dela estão documentos brutos de uma empresa fictícia: uma ata de reunião em PDF, uma folha de ata digitalizada e uma exportação de oportunidades do CRM.
 
-Cada formato chega de um jeito diferente e exige um tratamento diferente. Parte do desafio é justamente descobrir isso abrindo os arquivos.
+Os três chegam de jeitos diferentes e exigem tratamentos diferentes. Um já nasce com texto dentro, outro é só imagem e precisa de OCR, e o terceiro não é texto corrido, é tabela. Parte do desafio é descobrir isso abrindo os arquivos.
 
 Esses arquivos representam anos de conhecimento espalhado, sem padronização, sem busca eficiente e sem uma forma simples de encontrar decisões, responsáveis, datas, temas discutidos ou próximos passos definidos em reuniões anteriores.
 
@@ -42,9 +42,9 @@ Para isso, a empresa deseja criar uma Wiki Inteligente, capaz de pesquisar, resu
 ├── README.md
 ├── resposta.md
 └── raw/
-    ├── ata_reuniao_vendas_sa.pdf                    # PDF digital, com camada de texto
-    ├── ata_resultados_vendas_novos_dados.png        # folha escaneada, so imagem
-    └── vendas_sa_dados_ficticios_laboratorio.csv    # dados tabulares do sistema
+    ├── ata_reuniao_vendas_sa.pdf                    # 5 paginas, camada de texto: sem OCR
+    ├── ata_resultados_vendas_novos_dados.png        # 1 pagina digitalizada, so pixels: exige OCR
+    └── vendas_sa_dados_ficticios_laboratorio.csv    # 240 oportunidades do CRM, 19 colunas
 ```
 
 A pasta `raw/` representa os dados brutos da empresa.
@@ -150,7 +150,8 @@ Sua missão é descrever o pipeline inicial: armazenamento, leitura dos arquivos
 - [ ] Definir como preservar os arquivos originais.
 - [ ] Explicar como identificar quais documentos precisam de OCR.
 - [ ] Descrever como o Amazon Textract seria usado para documentos escaneados.
-- [ ] Explicar como arquivos digitais, como PDFs com camada de texto e dados tabulares em CSV, seriam tratados.
+- [ ] Explicar como o PDF com camada de texto seria tratado, sem passar por OCR.
+- [ ] Explicar como o CSV do CRM entraria na solução, lembrando que ele é tabela e não texto corrido.
 - [ ] Definir onde os textos extraídos seriam armazenados.
 - [ ] Explicar como falhas de processamento seriam registradas.
 
