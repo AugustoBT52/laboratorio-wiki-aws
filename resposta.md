@@ -52,8 +52,7 @@ Exemplo:
 - Documentos escaneados com baixa qualidade
 - Textos manuscritos ou parcialmente ilegíveis
 - Atas com estruturas diferentes
-- Informações importantes espalhadas em vários formatos
-```
+- Informações importantes espalhadas em vários formatos```
 
 **Sua resposta:**
 
