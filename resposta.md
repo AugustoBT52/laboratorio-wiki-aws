@@ -2,7 +2,7 @@
 
 > Preencha este arquivo com a sua proposta de solução.
 >
-> Sua resposta deve explicar como transformar os documentos brutos da pasta `raw/` em uma Wiki Corporativa Inteligente, pesquisável e segura usando apenas serviços da AWS.
+> Sua resposta deve explicar como transformar os documentos brutos da pasta raw em uma Wiki Corporativa Inteligente, pesquisável e segura usando apenas serviços da AWS.
 
 ---
 
@@ -21,9 +21,9 @@ https://github.com/AugustoBT52/laboratorio-wiki-aws/edit/main/resposta.md
 
 # ✅ Quest 1: O Mapa dos Arquivos Perdidos
 
-## 1.1 Formatos encontrados na pasta `raw/`
+## 1.1 Formatos encontrados na pasta raw
 
-Descreva quais tipos de arquivos existem dentro da pasta `raw/`.
+Descreva quais tipos de arquivos existem dentro da pasta raw.
 
 ```md
 Exemplo de como responder, com o formato e o que ele implica:
@@ -241,16 +241,16 @@ Defina quais metadados você extrairia de cada documento.
 
 | Metadado | Por que ele é importante? |
 |---|---|
-| Nome do documento | Preencha aqui |
-| Tipo do documento | Preencha aqui |
-| Data identificada | Preencha aqui |
-| Tema principal | Preencha aqui |
-| Participantes | Preencha aqui |
-| Decisões tomadas | Preencha aqui |
-| Responsáveis | Preencha aqui |
-| Próximos passos | Preencha aqui |
-| Nível de confidencialidade | Preencha aqui |
-| Caminho do arquivo original | Preencha aqui |
+| Nome do documento | Identificar o documento e facilitar sua localização. |
+| Tipo do documento | Saber se o conteúdo veio de um PDF, PNG, CSV ou outro formato. (Inclusive formatos inválidos) |
+| Data identificada | Permitir localizar documentos por período e relacionar os acontecimentos. |
+| Tema principal | Facilitar a busca por assuntos específicos. |
+| Participantes | Identificar as pessoas envolvidas na reunião ou documento. |
+| Decisões tomadas | Permitir localizar decisões importantes registradas no documento. |
+| Responsáveis | Identificar quem ficou responsável por cada atividade/ decisão |
+| Próximos passos | Facilitar o acompanhamento das atividades e pendências e ver em qual direção a empresa está indo. |
+| Nível de confidencialidade | Definir quais usuários podem acessar o conteúdo. |
+| Caminho do arquivo original | Manter a rastreabilidade entre o conteúdo processado e o arquivo original. |
 
 Adicione outros metadados, se necessário.
 
