@@ -115,7 +115,8 @@ Categoria ou assunto
 Origem do documento  
 Tipo de conteúdo, como texto, imagem ou dados de tabela.  
 Necessidade de OCR  
-Nível de acesso ou sensibilidade```
+Nível de acesso ou sensibilidade
+```
 
 ---
 
@@ -140,7 +141,8 @@ Os arquivos da pasta `raw/` seriam enviados para um bucket do Amazon S3, mantend
 
 O S3 Versioning poderia ser utilizado para manter versões dos arquivos caso algum documento fosse substituído ou alterado. O AWS KMS poderia ser utilizado para criptografar os dados armazenados.
 
-O S3 Lifecycle poderia ser utilizado posteriormente para definir regras de retenção e movimentação dos arquivos, caso fosse necessário reduzir custos ou remover arquivos após determinado período.```
+O S3 Lifecycle poderia ser utilizado posteriormente para definir regras de retenção e movimentação dos arquivos, caso fosse necessário reduzir custos ou remover arquivos após determinado período.
+```
 
 ---
 
@@ -155,7 +157,8 @@ Para manter os arquivos originais intactos, eles seriam armazenados no bucket S3
 
 Também seria importante manter informações como o nome do arquivo, data de envio e origem, permitindo identificar e rastrear cada documento ao longo do processamento.
 
-Além disso, as alterações e tentativas de acesso aos arquivos podem ser registradas pelo AWS CloudTrail. Esses registros podem ser monitorados pelo Amazon CloudWatch, que pode gerar alertas caso sejam identificadas alterações ou tentativas de acesso não autorizadas.```
+Além disso, as alterações e tentativas de acesso aos arquivos podem ser registradas pelo AWS CloudTrail. Esses registros podem ser monitorados pelo Amazon CloudWatch, que pode gerar alertas caso sejam identificadas alterações ou tentativas de acesso não autorizadas.
+```
 
 ---
 
@@ -191,7 +194,8 @@ Para o PDF digital, não seria necessário utilizar OCR, pois o documento já po
 
 Para o CSV, seria utilizado o AWS Glue para realizar o tratamento dos dados tabulares e organizar seu esquema.
 
-A arquitetura também poderia ser estendida posteriormente para outros formatos, como TXT, DOCX e Markdown, adicionando etapas específicas de extração conforme a necessidade.```
+A arquitetura também poderia ser estendida posteriormente para outros formatos, como TXT, DOCX e Markdown, adicionando etapas específicas de extração conforme a necessidade.
+```
 
 ---
 
