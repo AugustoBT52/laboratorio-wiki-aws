@@ -38,7 +38,8 @@ Exemplo de como responder, com o formato e o que ele implica:
 ```md
  PDF: nasce digital, não precisa de OCR; permite extrair o texto e a estrutura textual do documento.
 PNG: imagem digitalizada, precisa de OCR; permite extrair textos e informações estruturadas, como tabelas.
- CSV: nasce digital, não precisa de OCR; contém dados tabulares estruturados, como registros e campos das oportunidades de vendas.```
+ CSV: nasce digital, não precisa de OCR; contém dados tabulares estruturados, como registros e campos das oportunidades de vendas.
+```
 
 ---
 
