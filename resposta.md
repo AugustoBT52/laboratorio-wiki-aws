@@ -106,7 +106,7 @@ Como você classificaria os documentos sem depender de subpastas dentro de `raw/
 **Sua resposta:**
 
 ```md
-Os documentos podem ser classificados por meio de metadados, sem precisar criar subpastas dentro de `raw/`. Eu usaria informações como:
+Os documentos podem ser classificados por meio de metadados, sem precisar criar subpastas dentro de raw. Eu usaria informações como:
 
 Nome do arquivo  
 Tipo/formato do arquivo  
@@ -124,7 +124,7 @@ Nível de acesso ou sensibilidade
 
 ## 2.1 Armazenamento dos arquivos brutos
 
-Explique como os arquivos da pasta `raw/` seriam enviados e armazenados na AWS.
+Explique como os arquivos da pasta raw seriam enviados e armazenados na AWS.
 
 Serviços que você pode considerar:
 
@@ -460,7 +460,7 @@ Adicione, remova ou ajuste os serviços conforme sua proposta.
 
 ## 3. Fluxo de dados de ponta a ponta
 
-Descreva o caminho dos dados desde a pasta `raw/` até a Wiki Inteligente.
+Descreva o caminho dos dados desde a pasta raw até a Wiki Inteligente.
 
 ```md
 Exemplo de estrutura:
