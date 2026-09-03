@@ -409,7 +409,7 @@ O AWS IAM seria utilizado para definir o controle de acesso tanto dos usuários 
 
 O AWS KMS seria utilizado para proteger os dados por meio de criptografia, principalmente os documentos armazenados no Amazon S3. O Amazon Cognito seria responsável pela autenticação dos usuários que acessam a interface da Wiki.
 
-O Amazon Macie poderia ser utilizado para analisar os arquivos armazenados no S3 e identificar informações potencialmente sensíveis. Dessa forma, os arquivos da área `raw/` e os arquivos processados poderiam ser classificados e monitorados de acordo com o nível de sensibilidade das informações presentes.
+O Amazon Macie poderia ser utilizado para analisar os arquivos armazenados no S3 e identificar informações potencialmente sensíveis. Dessa forma, os arquivos da área raw e os arquivos processados poderiam ser classificados e monitorados de acordo com o nível de sensibilidade das informações presentes.
 
 O AWS CloudTrail registraria as ações realizadas nos recursos da AWS, permitindo identificar quem realizou determinada operação, qual recurso foi acessado ou alterado e quando isso aconteceu. O Amazon CloudWatch poderia monitorar esses registros, além dos logs e métricas dos serviços utilizados, permitindo gerar alertas em situações consideradas suspeitas ou fora do comportamento esperado.
 
@@ -479,7 +479,7 @@ Exemplo de estrutura:
 **Sua resposta:**
 
 ```md
-1 Os arquivos começam na pasta `raw/`, onde estão os documentos originais em PDF, PNG e CSV.
+1 Os arquivos começam na pasta raw, onde estão os documentos originais em PDF, PNG e CSV.
 2 Esses arquivos são enviados para um bucket do Amazon S3, onde ficam armazenados sem alterações.
 3 O AWS Step Functions organiza o processamento e identifica qual tipo de tratamento cada arquivo precisa.
 4 O PNG passa pelo Amazon Textract, que faz o OCR e transforma a imagem em texto e informações estruturadas.
@@ -510,7 +510,7 @@ raw/ → Amazon S3 → Lambda/Step Functions → Textract → S3 Processado → 
 **Sua resposta:**
 
 ```md
-raw/
+raw
   ↓
 Amazon S3
   ↓
