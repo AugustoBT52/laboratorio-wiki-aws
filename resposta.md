@@ -444,7 +444,7 @@ O acesso à Wiki seria feito por uma interface web utilizando AWS Amplify e Amaz
 
 | Serviço AWS | Papel na solução |
 |---|---|
-| Amazon S3 | Armazenar os arquivos originais (raw/) e os documentos processados, mantendo os dados disponíveis para processamento e consulta. |
+| Amazon S3 | Armazenar os arquivos originais (raw) e os documentos processados, mantendo os dados disponíveis para processamento e consulta. |
 | Amazon Textract | Realizar o OCR dos documentos em formato de imagem, como o PNG, extraindo textos e informações estruturadas, como tabelas. |
 | Amazon Bedrock | Utilizar modelos de IA para analisar os conteúdos e gerar respostas em linguagem natural a partir das informações recuperadas. |
 | Amazon Bedrock Knowledge Bases | Organizar os documentos processados, realizar o chunking e a geração de embeddings, além de permitir a busca semântica pelos conteúdos relevantes para responder às perguntas. |
