@@ -137,7 +137,7 @@ Serviços que você pode considerar:
 **Sua resposta:**
 
 ```md
-Os arquivos da pasta `raw/` seriam enviados para um bucket do Amazon S3, mantendo os arquivos originais sem alterações. O acesso ao bucket seria controlado pelo AWS IAM, permitindo que apenas usuários e serviços autorizados possam acessar os arquivos.
+Os arquivos da pasta raw seriam enviados para um bucket do Amazon S3, mantendo os arquivos originais sem alterações. O acesso ao bucket seria controlado pelo AWS IAM, permitindo que apenas usuários e serviços autorizados possam acessar os arquivos.
 
 O S3 Versioning poderia ser utilizado para manter versões dos arquivos caso algum documento fosse substituído ou alterado. O AWS KMS poderia ser utilizado para criptografar os dados armazenados.
 
