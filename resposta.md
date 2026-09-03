@@ -230,7 +230,8 @@ Os textos extraídos seriam tratados para remover informações desnecessárias,
 
 No caso de informações extraídas de imagens, seria necessário revisar possíveis erros do OCR, como números, datas, siglas e textos que estejam sobrepostos por outros elementos.
 
-Depois do tratamento, os resultados dos diferentes tipos de arquivo seriam enviados para uma função AWS Lambda responsável por padronizar e normalizar os conteúdos, mantendo uma estrutura comum de texto e metadados. Esses dados seriam então armazenados no S3 para posterior indexação e consulta.```
+Depois do tratamento, os resultados dos diferentes tipos de arquivo seriam enviados para uma função AWS Lambda responsável por padronizar e normalizar os conteúdos, mantendo uma estrutura comum de texto e metadados. Esses dados seriam então armazenados no S3 para posterior indexação e consulta.
+```
 
 ---
 
@@ -266,7 +267,8 @@ O Amazon Bedrock poderia ser utilizado para analisar os textos já extraídos e 
 
 A IA poderia identificar os principais temas abordados, decisões tomadas durante reuniões, responsáveis por cada atividade, pendências e prazos, além de gerar resumos dos documentos.
 
-Essas informações poderiam ser organizadas como metadados e utilizadas posteriormente para melhorar a busca. O Amazon Bedrock Knowledge Bases poderia utilizar os documentos processados para criar uma base de conhecimento pesquisável, permitindo encontrar informações relevantes nos documentos e utilizá-las posteriormente na geração de respostas.```
+Essas informações poderiam ser organizadas como metadados e utilizadas posteriormente para melhorar a busca. O Amazon Bedrock Knowledge Bases poderia utilizar os documentos processados para criar uma base de conhecimento pesquisável, permitindo encontrar informações relevantes nos documentos e utilizá-las posteriormente na geração de respostas.
+```
 
 ---
 
@@ -290,7 +292,8 @@ Cada documento teria uma identificação que permitiria relacionar os metadados 
 
 O AWS Glue Data Catalog poderia ser utilizado para catalogar e organizar os dados estruturados, principalmente os provenientes do CSV. O Amazon Bedrock Knowledge Bases utilizaria os documentos processados e seus metadados para realizar a indexação, permitindo buscas por informações e filtros.
 
-O DynamoDB poderia ser utilizado em uma evolução da solução caso fosse necessário manter informações adicionais de controle, como status e histórico de processamento.```
+O DynamoDB poderia ser utilizado em uma evolução da solução caso fosse necessário manter informações adicionais de controle, como status e histórico de processamento.
+```
 
 ---
 
@@ -307,7 +310,8 @@ Os documentos processados seriam divididos em trechos menores (content chunking,
 
 O Amazon Bedrock Knowledge Bases pode realizar essa divisão durante a ingestão dos documentos, utilizando diferentes estratégias de chunking, como tamanho fixo, hierárquico ou semântico. A estratégia pode ser escolhida de acordo com o tipo e a estrutura dos documentos.
 
-Depois da divisão, os chunks podem ser transformados em embeddings e armazenados em um índice vetorial, mantendo a relação com o documento original. Isso permite realizar buscas semânticas e também manter a rastreabilidade das informações utilizadas nas respostas.```
+Depois da divisão, os chunks podem ser transformados em embeddings e armazenados em um índice vetorial, mantendo a relação com o documento original. Isso permite realizar buscas semânticas e também manter a rastreabilidade das informações utilizadas nas respostas.
+```
 
 ---
 
@@ -330,7 +334,8 @@ Os embeddings seriam gerados a partir dos chunks dos documentos usando um modelo
 
 O Amazon Bedrock Knowledge Bases poderia cuidar desse processo durante a ingestão dos documentos. Para armazenar os vetores, poderia ser utilizado o Amazon S3 Vectors, mantendo também a relação com os documentos e seus metadados.
 
-Assim, quando o usuário fizer uma pergunta, ela também poderá ser transformada em um embedding e comparada com os vetores armazenados, encontrando os trechos mais relevantes para responder à pergunta.```
+Assim, quando o usuário fizer uma pergunta, ela também poderá ser transformada em um embedding e comparada com os vetores armazenados, encontrando os trechos mais relevantes para responder à pergunta.
+```
 
 ---
 
@@ -352,7 +357,8 @@ A pergunta do usuário seria recebida por uma interface web da Wiki, que poderia
 
 A pergunta seria enviada para o backend e encaminhada ao Amazon Bedrock Knowledge Bases, que buscaria na base vetorial os chunks mais relevantes dos documentos. Esses trechos seriam utilizados como contexto para o Amazon Bedrock gerar uma resposta em linguagem natural.
 
-A resposta seria apresentada na interface da Wiki junto com as fontes utilizadas, indicando os documentos e trechos que serviram de base para a resposta. Dessa forma, o usuário poderia conferir a origem das informações e manter a rastreabilidade da resposta.```
+A resposta seria apresentada na interface da Wiki junto com as fontes utilizadas, indicando os documentos e trechos que serviram de base para a resposta. Dessa forma, o usuário poderia conferir a origem das informações e manter a rastreabilidade da resposta.
+```
 
 ---
 
@@ -377,7 +383,8 @@ Após o login, o usuário poderia fazer perguntas pela interface. As requisiçõ
 
 A resposta gerada pela IA seria então retornada para a interface, junto com as fontes utilizadas, permitindo que o usuário consulte a origem das informações.
 
-O Amazon Q Business também poderia ser uma alternativa para disponibilizar uma interface de consulta baseada nos documentos corporativos, mas para esta arquitetura seria utilizado o Amplify junto com API Gateway, Lambda e Cognito.```
+O Amazon Q Business também poderia ser uma alternativa para disponibilizar uma interface de consulta baseada nos documentos corporativos, mas para esta arquitetura seria utilizado o Amplify junto com API Gateway, Lambda e Cognito.
+```
 
 ---
 
@@ -408,7 +415,8 @@ O AWS CloudTrail registraria as ações realizadas nos recursos da AWS, permitin
 
 Por exemplo, caso um usuário tivesse seu nível de acesso alterado ou ocorresse uma tentativa de acesso a um recurso para o qual ele não possui permissão, o CloudTrail poderia registrar a operação. O CloudWatch poderia monitorar esse comportamento e gerar um alerta para que a situação fosse analisada. Dessa forma, o controle de acesso, a auditoria e o monitoramento funcionariam de forma integrada.
 
-Por fim, o AWS Cost Explorer seria utilizado para acompanhar os custos da solução, permitindo identificar o consumo dos serviços utilizados, acompanhar a evolução dos gastos e identificar possíveis aumentos inesperados de custo.```
+Por fim, o AWS Cost Explorer seria utilizado para acompanhar os custos da solução, permitindo identificar o consumo dos serviços utilizados, acompanhar a evolução dos gastos e identificar possíveis aumentos inesperados de custo.
+```
 
 ---
 
@@ -427,7 +435,8 @@ A arquitetura proposta utiliza serviços AWS para armazenar, processar, organiza
 
 Os arquivos originais seriam armazenados no Amazon S3 e processados de acordo com seu formato, utilizando AWS Step Functions para orquestrar o fluxo, Amazon Textract para OCR, AWS Glue para os dados estruturados e AWS Lambda para extração e normalização. Os documentos processados seriam utilizados pelo Amazon Bedrock Knowledge Bases para gerar embeddings, realizar busca semântica e fornecer os conteúdos relevantes ao Amazon Bedrock para geração das respostas.
 
-O acesso à Wiki seria feito por uma interface web utilizando AWS Amplify e Amazon Cognito, com API Gateway e Lambda no backend. A solução também utilizaria IAM, KMS, CloudTrail, CloudWatch, Macie e Cost Explorer para controle de acesso, proteção dos dados, auditoria, monitoramento e acompanhamento dos custos.```
+O acesso à Wiki seria feito por uma interface web utilizando AWS Amplify e Amazon Cognito, com API Gateway e Lambda no backend. A solução também utilizaria IAM, KMS, CloudTrail, CloudWatch, Macie e Cost Explorer para controle de acesso, proteção dos dados, auditoria, monitoramento e acompanhamento dos custos.
+```
 
 ---
 
@@ -525,7 +534,8 @@ API Gateway + Lambda
   ↓
 Amplify + Cognito
   ↓
-Usuário```
+Usuário
+```
 
 ---
 
@@ -555,7 +565,8 @@ Os custos podem aumentar conforme a quantidade de documentos processados e o nú
 
 As respostas geradas pela IA podem conter erros, por isso devem ser baseadas nos documentos recuperados e apresentar as fontes utilizadas.
 
-O controle de permissões precisa ser configurado corretamente para evitar acesso indevido aos documentos.```
+O controle de permissões precisa ser configurado corretamente para evitar acesso indevido aos documentos.
+```
 
 ---
 
@@ -584,7 +595,8 @@ Expandir a arquitetura para suportar novos tipos de documentos e novos processos
 
 Criar mecanismos para acompanhar a qualidade das respostas e identificar possíveis melhorias na busca e na organização dos conteúdos.
 
-Integrar a Wiki com outras ferramentas corporativas, permitindo que ela faça parte dos processos já utilizados pela empresa.```
+Integrar a Wiki com outras ferramentas corporativas, permitindo que ela faça parte dos processos já utilizados pela empresa.
+```
 
 ---
 
@@ -616,4 +628,5 @@ A solução proposta utiliza serviços AWS de forma integrada para transformar d
 
 A arquitetura permite automatizar o processamento dos diferentes formatos de arquivos, realizar buscas semânticas e gerar respostas baseadas nos documentos disponíveis, mantendo a rastreabilidade das informações. Além disso, recursos de segurança, auditoria e monitoramento ajudam a proteger os dados e acompanhar o funcionamento da solução.
 
-A arquitetura também pode evoluir conforme a necessidade da empresa, principalmente com o aprofundamento do uso do AWS Step Functions e de outros serviços AWS, permitindo automatizar novos processos e tornar a solução mais completa e escalável.```
+A arquitetura também pode evoluir conforme a necessidade da empresa, principalmente com o aprofundamento do uso do AWS Step Functions e de outros serviços AWS, permitindo automatizar novos processos e tornar a solução mais completa e escalável.
+```
