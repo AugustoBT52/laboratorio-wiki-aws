@@ -57,11 +57,13 @@ Exemplo:
 **Sua resposta:**
 
 ```md
+
  O PNG contém uma ata de reunião em formato de imagem, então é necessário usar OCR para transformar a imagem em texto.
  O carimbo sobre uma das datas pode dificultar a leitura dessa informação durante o OCR.
  A tabela possui a abreviação "MI" para representar milhões. Dependendo da forma como o conteúdo for extraído, isso pode ser interpretado apenas como a sigla "MI", perdendo seu significado.
  Os arquivos possuem formatos diferentes e, por isso, precisam de tratamentos diferentes: o PDF possui texto digital, o PNG precisa de OCR e o CSV possui dados organizados em tabela.
-- No PDF, a repetição da informação de que o documento é fictício pode acabar sendo extraída junto com o conteúdo e gerar um pouco de ruído na hora de organizar e indexar os dados.```
+- No PDF, a repetição da informação de que o documento é fictício pode acabar sendo extraída junto com o conteúdo e gerar um pouco de ruído na hora de organizar e indexar os dados.
+```
 
 ---
 
